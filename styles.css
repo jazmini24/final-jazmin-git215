@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    --dk-green: #166212;
+    --lt-green: #afceb1;
+    --white: #fff;
+    --lt-gray: #eaeaea;
+    --dk-gray: #222;
+
+    --fonts: 'Trebuchet MS', Verdana, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-family: var(--fonts);
+    background-color: var(--lt-green);
+    color: var(--dk-gray);
+}
+header, main, footer{
+    padding: 1rem;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+header, footer{
+    text-align: center;
+    background-color: var(--lt-green);
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a{
+    text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-top: 4px solid var(--white);
+    border-bottom: 4px solid var(--dk-green);
+    color: var(--dk-gray);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: var(--dk-green);
+    color: var(--lt-gray);
+}
+main > section{
+    padding: 1rem 0;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.67em 0;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin: 0.83 0;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.17rem;
+    margin: 1em 0;
+    font-weight: bold;
+}
+h2, h3{
+    text-align: center;
+}
+
+p{
+    max-width: 65ch;
+    margin: 0.5rem auto;
+}
+p{
+    width: 100%;
+    max-width: 55ch;
+    align-items: center;
+}
+header{
+    padding: 1rem;
+    width: 968px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    border-bottom: 8px var(--lt-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+header a{
+    padding: 0;
+}
+
+header img{
+    width: calc(1000px - 2rem);
+    height: auto;
+}
+img{
+    display: block;
+}
+#contact section{
+    text-align: center;
+
+}
+form{
+    width: 300px;
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+input, label, textarea, #my-submit{
+    display: block;
+    font-style: var(--fonts);
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+label{
+    margin: 0.5rem 0 0.25rem 0;
+    font-size: 1.25rem;
+}
+.required span{
+    font-size: 1.5rem;
+    color: var(--dk-green);
+}
+input, textarea{
+    padding: 0.25;
+    width: 275px;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--lt-gray);
+}
+input:invalid, textarea:invalid{
+    outline: 3px solid var(--br-green);
+}
+input:focus, textarea:focus{
+    outline: 3px solid var(--dk-green);
+}
+#my-submit{
+    width: 50%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    font-family: var(--fonts);
+    font-size: 1.45rem;
+    font-weight: normal;
+    outline: none;
+    border: 4px solid var(--lt-green);
+    background-color: var(--lt-green);
+    color: var(--white);
+}
+#my-submit:focus{
+    border-color: var(--lt-green);
+}
+#my-submit:hover{
+    background-color: var(--white);
+    color: var(--dk-green);
+}
+footer{
+    padding: 1rem;
+    width: 968px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    text-align: center;
+    padding-top: 2rem;
+}
+footer section{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    row-gap: 0.5rem;
+    column-gap: 1rem;
+    width: 520px;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+footer h2{
+    margin: 0;
+    font-size: 1.35rem;
+    line-height: 1;
+    grid-column: span 3;
+}
+footer a{
+    padding: 0.5rem;
+    color: var(--dk-gray);
+    text-underline-offset: 4px;
+    text-decoration-color: var(--dk-green);
+    text-decoration-thickness: 2px;
+}
+footer:hover a{
+    color: var(--dk-green);
+}
+footer p{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+}
