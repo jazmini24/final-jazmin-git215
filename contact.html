@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Swiss Resort and Day Spa</title>
+        <meta name="author" content="Jazmin Ibarra"><!-- TO DO -->
+        <meta name="description" content="Swiss Resort and Day Spa offers a relaxing getaway. Book with us today!">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/swiss-valley.jpg" alt="" width="1440" height="560">
+            <h1>Swiss Resort and Day Spa</h1>
+            <nav>
+                <ul>
+                    <li><a href="#index.html">Home</a></li>
+                    <li><a href="accom.html">Accommodations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <img src="images/swiss-peak.jpg" alt="snow mountains surrounded by pine trees and a body of water" width="350" height="455">
+                <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                <p>Required inputs are marked with a <span class="required">*</span></p>
+                
+                <form action="action=https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+
+                    <label for="my_name">Full Name: <span class="required">*</span></label>
+                    <input type="text" name="my_name" id="my_name" required>
+    
+                    <label for="my_email">Email Address: <span class="required">*</span></label>
+                    <input type="email" name="my_email" id="my_email" required>
+
+                    <label for="my_phone">Phone Number: <span class="required">*</span></label>
+                    <input type="tel" name="my_phone" id="my_phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+
+                    <label for="comments">Comments: <span class="required">*</span></label>
+                    <textarea name="comments" id="comments" required></textarea>
+    
+                    <input type="submit" name="my_submit" id="my_submit" value="Submit the Form">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright ©2023 - Swiss Resort and Day Spa</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
+</html>
